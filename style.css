@@ -14,7 +14,7 @@ body {
 
 .logo {
     max-width: 400px;
-    height: 100%;
+    width: 100%;
 }
 
 
@@ -150,5 +150,82 @@ a.button {
 /* pc 1100px a víc */
 @media screen and (min-width: 1100px) {
 
+    .section {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .wrapper {
+        margin: 0px auto;
+        max-width: 1040px;
+    }
+
+    h1,
+    h2 {
+        margin-top: 0;
+    }
+
+
+
+
+
+    /* první sekce  */
+    .first {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .happy,
+    .main {
+        max-width: 490px;
+        flex-grow: 1;
+    }
+
+    .logo {
+        max-width: 425px;
+        text-align: center;
+    }
+
+    .happy {
+        text-align: left;
+    }
+
+
+
+
+
+
+    /* druha a treti  */
+    .cards {
+        max-width: 550px;
+    }
+
+    .services {
+        max-width: 430px;
+    }
+
+    .second,
+    .third {
+        margin-top: 80px;
+    }
+
+    .services {
+        text-align: left;
+    }
+
+    .second p,
+    .third p {
+        margin-bottom: 0;
+    }
+
+
+
+
+
+    /* druha */
+    .second {
+        flex-direction: row-reverse;
+    }
 
 }
