@@ -1,3 +1,4 @@
+/* obecné, mobil */
 body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -13,7 +14,7 @@ body {
 }
 
 .logo {
-    max-width: 400px;
+    max-width: 350px;
     width: 100%;
 }
 
@@ -96,13 +97,45 @@ a.button {
     background-color: white;
 }
 
+.rv {
+    margin-bottom: 0;
+}
+
+
 
 
 
 
 /* tablet 640 a víc */
 @media screen and (min-width: 640px) {
-    
+
+    /* nadpisy, odstavce */
+    h1 {
+        margin-top: 30px;
+    }
+
+    h2 {
+        margin-top: 80px;
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+
+
+    /* tlačítka */
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    a.button {
+        margin: 0px;
+    }
+
+
+    /* karty */
     .cards {
         display: flex;
         gap: 20px;
@@ -120,26 +153,10 @@ a.button {
         margin: 0px auto 20px auto;
     }
 
-    h2 {
-        margin-top: 80px;
-    }
 
-    .buttons {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    a.button {
-        margin: 0px;
-    }
-
-    p {
-        margin-bottom: 40px;
-    }
-
-    h1 {
-        margin-top: 30px;
+    /* obrázek */
+    .logo {
+        max-width: 400px;
     }
 }
 
@@ -166,7 +183,9 @@ a.button {
         margin-top: 0;
     }
 
-
+    .buttons {
+        justify-content: start;
+    }
 
 
 
@@ -190,9 +209,6 @@ a.button {
     .happy {
         text-align: left;
     }
-
-
-
 
 
 
@@ -221,11 +237,8 @@ a.button {
 
 
 
-
-
-    /* druha */
+    /* flexbox druha */
     .second {
         flex-direction: row-reverse;
     }
-
 }
