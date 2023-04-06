@@ -26,6 +26,8 @@ h1 {
     font-weight: 500;
     color: black;
     margin: 40px 0px;
+    position: relative;
+    width: 100%;
 }
 
 h2 {
@@ -39,6 +41,16 @@ p {
     max-width: 550px;
     margin: 0 auto 30px auto;
     font-size: 16px;
+}
+
+h1:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    bottom: -15px;
+    left: calc(50% - 30px);
+    border-bottom: 2px solid #407BFF;
 }
 
 
@@ -181,6 +193,10 @@ a.button {
     h1,
     h2 {
         margin-top: 0;
+    }
+
+    h1:before {
+        left: 0;
     }
 
     .buttons {
